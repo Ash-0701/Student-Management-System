@@ -7,6 +7,9 @@ def login():
         messagebox.showerror('Error','Fields cannot be empty')
     elif usernameEntry.get()=='Ashutosh' and passwordEntry.get()=='ash@2001':
         messagebox.showinfo('Success','Welcome')
+        window.destroy()
+        import sms
+
 
     else:
         messagebox.showerror('Error','Please enter correct credentials')
@@ -16,6 +19,7 @@ def login():
 window=Tk()
 
 window.geometry('1280x700+0+0')
+window.title('Login window of Student Management System')
 
 window.resizable(False,False)
 
